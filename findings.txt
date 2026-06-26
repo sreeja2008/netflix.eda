@@ -1,0 +1,33 @@
+
+NETFLIX CATALOG EDA — KEY FINDINGS
+===================================
+
+Dataset: 1200 titles, 16 original columns
+
+1. CONTENT MIX
+   - Movies: 837 (69.8%)
+   - TV Shows: 363 (30.2%)
+   - Movies dominate the catalog by roughly a 2:1 ratio.
+
+2. GROWTH OVER TIME
+   - Titles added peaked around 2021 (483 titles that year),
+     suggesting aggressive catalog expansion in that period.
+
+3. TOP GENRES
+   - Most common genre: Stand-Up Comedy (185 titles)
+   - Genres are heavily skewed toward Dramas, Comedies, and Documentaries.
+
+4. CONTENT ORIGIN
+   - Top producing country: United Kingdom (93 titles)
+   - A large share of content is concentrated in a handful of countries.
+
+5. MOVIE LENGTH
+   - Average movie duration: 121 minutes
+   - Most movies cluster between 91 and
+     152 minutes (interquartile range).
+
+6. DATA QUALITY NOTES
+   - 'director' and 'country' had missing values, filled with 'Unknown'
+     rather than dropped, to avoid losing valid data in other columns.
+   - 'listed_in' contains multiple comma-separated genres per title;
+     exploded into one row per genre for accurate genre-level counts.
